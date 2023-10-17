@@ -17,6 +17,27 @@
 
 > [MQTT](https://mqtt.org/faq) stands for MQ Telemetry Transport. It is a publish/subscribe, extremely simple and lightweight messaging protocol, designed for constrained devices and low-bandwidth, high-latency or unreliable networks.
 
+## 更新点
+
+1、增加：点击侧边栏按钮，折叠连接选项卡功能
+
+2、增加：支持多个主题的点击，并且在消息列表根据选中的主题进行渲染，同时支持搜索
+
+3、修改：底部栏高度从180px改为了45px
+
+### 折叠连接选项
+
+![1697538997360](image/README/1697538997360.png)
+
+### 支持多主题点击、并渲染和搜索
+
+![1697539067777](image/README/1697539067777.png)
+
+### 底部栏高度修改
+
+![1697539123797](image/README/1697539123797.png)
+
+
 ## Preview
 
 ![mqttx-preview](./assets/mqttx-preview.png)
@@ -40,7 +61,7 @@ brew install --cask mqttx
 ### Linux
 
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/mqttx)
-<a href='https://flathub.org/apps/details/com.emqx.MQTTX'><img height='56' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.png'/></a>
+`<a href='https://flathub.org/apps/details/com.emqx.MQTTX'><img height='56' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.png'/>``</a>`
 
 ### Released Packages
 
@@ -54,20 +75,16 @@ See our [documentation](https://mqttx.app/docs) or [manual](./docs/manual.md) fo
 
 1. Get MQTT Broker Ready.
 
-    - If you do not need to deploy the MQTT Broker locally, you can use the [public MQTT 5.0 Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by [EMQX Cloud](https://www.emqx.com/en/cloud) for testing:
+   - If you do not need to deploy the MQTT Broker locally, you can use the [public MQTT 5.0 Broker](https://www.emqx.com/en/mqtt/public-mqtt5-broker) provided by [EMQX Cloud](https://www.emqx.com/en/cloud) for testing:
 
-        ```shell
-        Broker IP: broker.emqx.io
-        Broker TCP Port: 1883
-        Broker SSL Port: 8883
-        ```
-
-    - To run MQTT Broker locally, [EMQX](https://www.emqx.com/en/products/emqx) is recommended: An Open-Source, Cloud-Native, Distributed MQTT Broker for IoT.
-
+     ```shell
+     Broker IP: broker.emqx.io
+     Broker TCP Port: 1883
+     Broker SSL Port: 8883
+     ```
+   - To run MQTT Broker locally, [EMQX](https://www.emqx.com/en/products/emqx) is recommended: An Open-Source, Cloud-Native, Distributed MQTT Broker for IoT.
 2. Connection configuration. Click the `+` button in the left menu bar and fill in the corresponding required fields in the form.
-
 3. After the connection information is configured, click the `Connect` button in the upper right corner to create a connection and connect to MQTT Broker.
-
 4. After the MQTT is connected successfully, you can perform MQTT publish and subscription tests.
 
 ![mqttx-gif](./assets/mqttx-gif.gif)
@@ -93,7 +110,7 @@ Recommended version for Node environment:
 
 - v16.\*.\*
 
-``` shell
+```shell
 # Clone
 git clone git@github.com:emqx/MQTTX.git
 
@@ -141,7 +158,6 @@ Please make sure to read the [Contributing Guide](https://github.com/emqx/MQTTX/
 - [MQTT client programming](https://www.emqx.com/en/blog/tag/mqtt-client-programming)
 
   A series of blogs to help developers get started quickly with MQTT in PHP, Node.js, Python, Golang, and other programming languages.
-
 - [MQTT SDKs](https://www.emqx.com/en/mqtt-client-sdk)
 
   We have selected popular MQTT client SDKs in various programming languages and provided code examples to help you quickly understand the use of MQTT clients.
