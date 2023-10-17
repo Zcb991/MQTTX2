@@ -17,6 +17,26 @@
 
 > [MQTT](https://mqtt.org/faq) 全称为 Message Queuing Telemetry Transport（消息队列遥测传输）是一种基于 发布/订阅 范式的“轻量级”消息协议，旨在用于受限设备和低带宽，高延迟或不可靠的网络，由 IBM 发布。
 
+## 更新点
+
+1、增加：点击侧边栏按钮，折叠连接选项卡功能
+
+2、增加：支持多个主题的点击，并且在消息列表根据选中的主题进行渲染，同时支持搜索
+
+3、修改：底部栏高度从180px改为了45px
+
+### 折叠连接选项
+
+![1697538997360](image/README/1697538997360.png)
+
+### 支持多主题点击、并渲染和搜索
+
+![1697539067777](image/README/1697539067777.png)
+
+### 底部栏高度修改
+
+![1697539123797](image/README/1697539123797.png)
+
 ## 功能预览
 
 ![mqttx-preview](./assets/mqttx-preview.png)
@@ -40,7 +60,7 @@ brew install --cask mqttx
 ### Linux
 
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/mqttx)
-<a href='https://flathub.org/apps/details/com.emqx.MQTTX'><img height='56' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.png'/></a>
+`<a href='https://flathub.org/apps/details/com.emqx.MQTTX'><img height='56' alt='Download on Flathub' src='https://flathub.org/assets/badges/flathub-badge-en.png'/>``</a>`
 
 ### 发行包
 
@@ -56,18 +76,14 @@ brew install --cask mqttx
 
    - 如果您不需要在本地部署 MQTT Broker，那么可以使用由 [EMQX Cloud](https://www.emqx.com/zh/cloud) 提供的[公共 MQTT 5.0 服务器](https://www.emqx.com/zh/mqtt/public-mqtt5-broker)来进行测试：
 
-      ```shell
-      Broker 地址: broker.emqx.io
-      Broker TCP 端口: 1883
-      Broker SSL 端口: 8883
-      ```
-
+     ```shell
+     Broker 地址: broker.emqx.io
+     Broker TCP 端口: 1883
+     Broker SSL 端口: 8883
+     ```
    - 如果您打算部署一个本地运行的 MQTT Broker，那么我们推荐您 [下载 EMQX](https://www.emqx.com/zh/products/emqx) 进行安装和使用。EMQX 是一款开源云原生分布式物联网 MQTT 消息服务器。
-
 2. 连接配置。点击左侧菜单栏里的 `+` 号按钮，并填写表单中相应的必填项。
-
 3. 连接信息配置完成后，点击右上角的 `Connect` 按钮就可以创建一个连接并连接至 MQTT Broker。
-
 4. MQTT 连接成功后，就可以进行 MQTT 的发布与订阅测试。
 
 ![mqttx-gif](./assets/mqttx-gif.gif)
@@ -94,7 +110,7 @@ Node 环境的推荐版本:
 
 - v16.\*.\*
 
-``` shell
+```shell
 # 克隆项目
 git clone git@github.com:emqx/MQTTX.git
 
@@ -142,7 +158,6 @@ yarn run electron:build-mac
 - [MQTT 入门及进阶](https://www.emqx.com/zh/mqtt)
 
   EMQ 提供了通俗易懂的技术文章及简单易用的客户端工具，帮助您学习 MQTT 并快速入门 MQTT 客户端编程。
-
 - [MQTT SDKs](https://www.emqx.com/zh/mqtt-client-sdk)
 
   我们选取了各个编程语言中热门的 MQTT 客户端 SDK，并提供代码示例，帮助您快速掌握 MQTT 客户端库的使用。
